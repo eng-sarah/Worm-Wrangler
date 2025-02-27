@@ -1,0 +1,137 @@
+body {
+  background-color: #f3c194;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+.container {
+  display: flex;
+}
+
+.innerContainer1,
+.innerContainer2 {
+  width: 50%;
+}
+
+.gloveCustomizationArea {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 43%;
+  margin: 10px;
+}
+
+#customGloves {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 10px 0;
+}
+
+.gloves {
+  display: flex;
+  border: 5px solid #db7a91;
+  width: 85%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+.gloveImage {
+  margin: 0 20px;
+  width: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: gloveAnimation 10s infinite;
+}
+
+@keyframes gloveAnimation {
+  from {
+    transform: rotateY(360deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+#glove1 {
+  background-image: url("../images/openHand1.png");
+}
+
+#glove2 {
+  background-image: url("../images/openHand2.png");
+}
+
+#glove3 {
+  background-image: url("../images/openHand3.png");
+}
+
+#goToGameButton {
+  padding: 5px 10px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #db7a91;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+.soundText {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+  vertical-align: middle;
+}
+
+#volumeSlider {
+  display: none;
+}
+
+#adjustVolume {
+  display: none;
+}
+
+.soundDiv {
+  margin: 10px;
+}
+
+#soundCheckBox {
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+}
+
+#goToGameButton:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#glove1:hover {
+  background-image: url("../images/closeHand1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#glove2:hover {
+  background-image: url("../images/closeHand2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#glove3:hover {
+  background-image: url("../images/closeHand3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+

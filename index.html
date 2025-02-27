@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<title>Worm Wrangler</title>
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/introPage.css">
+</head>
+
+<body>
+	<!--Game name heading-->
+	<h1>Worm Wrangler</h1>
+	<!--Container for all the elements-->
+	<div class="container">
+		<!--Inner Container for the game image-->
+		<div class="innerContainer1">
+			<img src="images/intro.png" alt="game image" width="600" height="495">
+		</div>
+		<!--Inner Container for the other elements-->
+		<div class="innerContainer2">
+			<!--Glove customization area-->
+			<div class="gloveCustomizationArea">
+				<!--Glove customization area Text-->
+				<p id="customGloves">Choose your gloves:</p>
+				<!--Three gloves-->
+				<div class="gloves">
+					<div class="gloveImage" id="glove1"></div>
+					<div class="gloveImage" id="glove2"></div>
+					<div class="gloveImage" id="glove3"></div>
+				</div>
+			</div>
+			<!--Go to game button-->
+			<div class="goToGameButtonDiv">
+				<button id="goToGameButton">Go to game</button>
+			</div>
+			<!--Container for sound checkbox and volume slider-->
+			<div class="soundDiv">
+				<!--Sound text-->
+				<label class="soundText">Sound:</label>
+				<!--Sound checkbox-->
+				<input type="checkbox" id="soundCheckBox">
+				<!--Adjust volume text-->
+				<label class="soundText" id="adjustVolume">Adjust volume:</label>
+				<!--Volume slider-->
+				<input type="range" min="0" max="10" value="5" id="volumeSlider">
+			</div>
+		</div>
+	</div>
+	<!--Javascript-->
+	<script src="javascript/introPage.js"></script>
+</body>
+
+</html>

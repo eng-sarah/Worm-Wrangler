@@ -1,0 +1,176 @@
+body {
+  background-image: url("../images/soil.jpg");
+  background-size: cover;
+  cursor: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.board {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gameBoard {
+  max-width: 700px;
+  max-height: 535px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.hole {
+  width: 150px;
+  height: 150px;
+  margin: 15px 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  /*background-color: #000;*/
+}
+
+.worm {
+  width: 140px;
+  height: 140px;
+  background-image: url("../images/worms.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  margin: 20px;
+  display: none;
+}
+
+.scoreBoardText {
+  font-size: 20px;
+  font-weight: bold;
+  color: #623414;
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+.buttons {
+  padding: 5px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #edb389;
+  color: #623414;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+.tray {
+  width: 330px;
+  height: 150px;
+  background-color: #fff;
+  margin: 10px;
+  border: 5px solid #edb389;
+  border-radius: 10px;
+}
+
+.cursor {
+  height: 110px;
+  width: 100px;
+  background-image: url("../images/openHand1.png");
+  background-size: cover;
+  position: fixed;
+  pointer-events: none;
+  transition: transform 0.1s;
+}
+
+#popUpWindow {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  width: 30%;
+  height: 40%;
+  background-color: rgb(235, 173, 132);
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+#closeButton {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#winMessage {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+#gameOver {
+  margin-top: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#closeButton:hover,
+#startButton:hover,
+#homeButton:hover {
+  transform: scale(1.1);
+}
+
+#animationEffect {
+  display: flex;
+  height: 50px;
+}
+
+.aniImage {
+  margin: 5px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+#image1 {
+  animation: movingImage 3s infinite;
+}
+
+#image2 {
+  animation: movingImage 4s infinite;
+}
+
+#image3 {
+  animation: movingImage 5s infinite;
+}
+
+@keyframes movingImage {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 80%;
+  }
+}

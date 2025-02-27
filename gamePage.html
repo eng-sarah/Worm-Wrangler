@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Worm Wrangler</title>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/gamePageCss.css">
+</head>
+
+<body>
+    <!--Game name heading-->
+    <h1>Worm Wrangler</h1>
+    <!--Container for all the elements-->
+    <div class="board">
+        <!--Audio for collecting worms-->
+        <audio id="hitSound" src="audio/hit.wav"></audio>
+        <!--Audio for missing worms-->
+        <audio id="missSound" src="audio/miss.wav"></audio>
+        <!--Audio for game completion-->
+        <audio id="completionSound" src="audio/completion.wav"></audio>
+        <!--Game area-->
+        <div class="gameBoard">
+            <!--Holes and worms -->
+            <div class="hole">
+                <div class="worm"></div>
+            </div>
+            <!--Holes and worms -->
+            <div class="hole">
+                <div class="worm"></div>
+            </div>
+            <!--Holes and worms -->
+            <div class="hole">
+                <div class="worm"></div>
+            </div>
+            <!--Holes and worms -->
+            <div class="hole">
+                <div class="worm"></div>
+            </div>
+            <!--Holes and worms -->
+            <div class="hole">
+                <div class="worm"></div>
+            </div>
+            <!--Holes and worms -->
+            <div class="hole">
+                <div class="worm"></div>
+            </div>
+            <div class="hole">
+                <div class="worm"></div>
+            </div>
+            <!--Holes and worms -->
+            <div class="hole">
+                <div class="worm"></div>
+            </div>
+            <!--Holes and worms -->
+            <div class="hole">
+                <div class="worm"></div>
+            </div>
+        </div>
+        <!--Score board -->
+        <div class="scoreBoard">
+            <!--Timer -->
+            <div class="scoreBoardText">Time left: <span id="timeLeft"> 20 </span> </div>
+            <!--Score -->
+            <div class="scoreBoardText">Score: <span id="score">0</span></div>
+            <!--Miss count -->
+            <div class="scoreBoardText">Misses: <span id="misses">0</span> </div>
+            <!--Worm count -->
+            <div class="scoreBoardText">Worm Count: <span id="wormCount">0</span> </div>
+            <!--Start button -->
+            <button class="buttons" id="startButton">Start</button>
+            <!--Home button -->
+            <button class="buttons" id="homeButton">Home</button>
+            <!--Worm collection tray -->
+            <div class="tray"> </div>
+        </div>
+        <!--Result popup window -->
+        <div id="popUpWindow">
+            <!--Worms for animation-->
+            <div id="animationEffect">
+                <img src="images/movingWorm1.png" alt="" class="aniImage" id="image1">
+                <img src="images/movingWorm2.png" alt="" class="aniImage" id="image2">
+                <img src="images/movingWorm3.png" alt="" class="aniImage" id="image3">
+            </div>
+            <!--Game over text -->
+            <div id="gameOver"> GAME OVER </div>
+            <!--Game result message -->
+            <div id="winMessage"></div>
+            <!--Close button -->
+            <button id="closeButton"> Close</button>
+        </div>
+        <!--Customized cursor -->
+        <div class="cursor"></div>
+    </div>
+    <!--Javascript -->
+    <script src="javascript/gamePageScript.js"></script>
+</body>
+
+</html>
